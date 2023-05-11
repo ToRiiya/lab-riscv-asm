@@ -23,13 +23,13 @@ int main()
 	{
 		for (int j = 0; j < N; j++)
 		{
-			matrix[i][j] = rand() % 10;
+			matrix[i][j] = rand() % 10 + (-5);
 			printf("%d\t", matrix[i][j]);
 		}
 		printf("\n");
 	}
 
 	int sum = sum_neg(&matrix[0][0]);
-	printf("\nSum of neg\n", sum);
+	printf("\nSum of neg %d\n", sum);
 	return 0;
 }
